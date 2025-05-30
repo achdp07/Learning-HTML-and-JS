@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>User Profile</title>
+        <style>
+            .user-card {
+                background-color: #f0f0f0;
+                padding: 20px;
+                margin: 10px 0;
+            }
+            .highlight {
+                color: blue;
+            }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #777;
+        }
+
+        nav li{
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #333;
+        }
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About US</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="user123" class="user-card" data-user-level="novice"
+        style="border: 1px solid #000;">
+        <p class="highlight">Name: Ach DP</p>
+        <p>Interest: HTML, CSS, JavaScript</p>
+        <p>Email: abdou&trade;layehdp@gmail.com</p>
+    </div>
+    <h2>Cooking Terms</h2>
+    <dl>
+        <dt><strong>Preheat</strong></dt>
+        <dd>Heat (<em>an oven or grill</em>) beforehand</dd>
+        <dt>Cook <sup>(food)</sup>&reg; by dry hrat without direct exosure to a flame, typically in an oven.</dt>
+    </dl>
+
+    <ul>
+        <li><input type="text" name="username" placeholder="Username"></li>
+        <li><input type="password" name="password" placeholder="Password"></li>
+        <li><input type="email" name="email" placeholder="Email"></li>
+    </ul>
+    
+        
+        
+        
+        <form action="/submit-form" method="post">
+            <label for="username">username (4-8 characters):</label>
+            <input type="text" id="username" name="username" required minlength="4" maxlength="8" placeholder="Username">
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" required minlength="8" maxlength="14" placeholder="Password">
+            <label for="Email">Email:</label>
+            <input type="email" id="username" name="email" required placeholder="example@domain.com">
+            <label for="Age">Age:</label>
+            <input type="Age" id="Age" name="Age" placeholder="age">
+            <label for="Terms of Service">Terms of Service:</label>
+            <input type="checkbox" required >
+
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
